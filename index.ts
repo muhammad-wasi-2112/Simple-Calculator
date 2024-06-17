@@ -3,6 +3,7 @@
 import inquirer from "inquirer"
 
 // User input
+do{
 let answers = await inquirer.prompt([
     {
         name:"num1",
@@ -40,3 +41,4 @@ else if (opt === "*"){
 else if (opt === "/"){
     console.log(`${number1} ${opt} ${number2} = ${number1 / number2}`)
 }
+}while(true)
