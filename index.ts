@@ -1,6 +1,9 @@
 #! /usr/bin/env node 
 
-import inquirer from "inquirer"
+import inquirer from "inquirer";
+import chalk from "chalk";
+
+console.log(chalk.gray.bold(`---------${chalk.yellowBright.bold("Simple Calculator")}---------`));
 
 // User input
 do{
@@ -30,15 +33,15 @@ let opt:string = answers.operator
 
 // Conditional statements
 if (opt === "+"){
-    console.log(`${number1} ${opt} ${number2} = ${number1 + number2}`)
+    console.log(chalk.cyanBright.bold(`${number1} ${opt} ${number2} = ${number1 + number2}`));
 }
 else if (opt === "-"){
-    console.log(`${number1} ${opt} ${number2} = ${number1 - number2}`)
+    console.log(chalk.cyanBright.bold(`${number1} ${opt} ${number2} = ${number1 - number2}`));
 }
 else if (opt === "*"){
-    console.log(`${number1} ${opt} ${number2} = ${number1 * number2}`)
+    console.log(chalk.cyanBright.bold(`${number1} ${opt} ${number2} = ${number1 * number2}`));
 }
 else if (opt === "/"){
-    console.log(`${number1} ${opt} ${number2} = ${number1 / number2}`)
+    console.log(chalk.cyanBright.bold(`${number1} ${opt} ${number2} = ${number1 / number2}`));
 }
 }while(true)
