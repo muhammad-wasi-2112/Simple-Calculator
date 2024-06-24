@@ -18,7 +18,7 @@ do {
         {
             name: "operator",
             type: "list",
-            mmeesage: "Select the operator:",
+            message: "Select the operator:",
             choices: ['+', '-', '*', '/'],
         }
     ]);

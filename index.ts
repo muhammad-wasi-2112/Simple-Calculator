@@ -21,7 +21,7 @@ let answers = await inquirer.prompt([
     {
         name:"operator",
         type:"list",
-        mmeesage:"Select the operator:",
+        message:"Select the operator:",
         choices:['+','-','*','/'],
     }
 ])
@@ -43,5 +43,5 @@ else if (opt === "*"){
 }
 else if (opt === "/"){
     console.log(chalk.yellowBright.bold(`${number1} ${opt} ${number2} = ${number1 / number2}`));
-}
+ }
 }while(true);
